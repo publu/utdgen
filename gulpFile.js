@@ -29,7 +29,7 @@ gulp.task('upload', function () {
 })
 
 gulp.task('generate', function() {
-  return run('python buster/buster/buster.py generate').exec()    // prints "Hello World\n". 
+  return run('python buster.py generate').exec()    // prints "Hello World\n". 
     .pipe(gulp.dest(''))      // writes "Hello World\n" to output/echo. 
   ;
 })
